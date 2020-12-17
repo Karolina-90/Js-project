@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body id="categories">
+
+    <div class="container">
+
+        <header>
+
+            <div class="back">
+                <a href="../index.html"><i class="fas fa-angle-left"></i> HOME</a>
+            </div>
+
+            <h2>SELECT A CATEGORY</h2>
+
+            <!-- <div class="space"></div> -->
+
+        </header>
+
+        <section class="user">
+            <div class="btn-box">
+
+                <div class="wrapper styles-btn">
+
+                    <a id="user-trigger" href="#"><i class="fas fa-user-circle"></i></a>
+
+                    <div class="user-wrapper open">
+                        <i class="fas fa-crown"></i>
+
+                        <p id="username">ANONIMOUS</p>
+
+                        <!-- <i class="far fa-star"></i> -->
+
+                        <div class="points">
+                            <h2>YOUR SCORE: </h2>
+                            <span id="points">0</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="sound" class="styles-btn audio-wrapper">
+                    <!-- <i class="fas fa-volume-mute"></i> -->
+                    <i class="fas fa-volume-up"></i>
+
+                </div>
+
+                <audio class="audios" id="sound1" preload="none">
+                    <source src="../../audio/muse.mp3" type="audio/mpeg">
+                </audio>
+
+                <audio class="audios" id="sound2" preload="none">
+                    <source src="../../audio/mcr.mp3" type="audio/mpeg">
+                </audio>
+
+            </div>
+            <!--btn-box-->
+        </section>
+
+        <main class="category-container">
+
+            <div class="grid-container">
+
+                <div class="category" id="animals" >
+                    <a href="categories/animals.html" class="hover">
+                        <i class="fas fa-paw"></i>
+                        <i class="fas fa-check"></i>
+                        <h3>ANIMALS</h3>
+                    </a>
+                </div>
+
+                <div class="category" id="fruveg">
+                    <a href="categories/fruits.html" class="hover">
+                        <i class="fas fa-apple-alt"></i>
+                        <i class="fas fa-check"></i>
+                        <h3>FRUITS<br>AND<br>VEGETABLES</h3>
+                    </a>
+                </div>
+
+                <div class="category" id="food">
+                    <a href="categories/food.html" class="hover">
+                        <i class="fas fa-utensils"></i>
+                        <i class="fas fa-check"></i>
+                        <h3>FOOD</h3>
+                    </a>
+                </div>
+
+                <div class="category" id="sports">
+                    <a href="categories/sports.html">
+                        <i class="fas fa-snowboarding"></i>
+                        <i class="fas fa-check"></i>
+                        <h3>SPORTS</h3>
+                    </a>
+                </div>
+
+                <div class="category" id="weather">
+                    <a href="categories/weather.html">
+                        <i class="fas fa-cloud-sun"></i>
+                        <i class="fas fa-check"></i>
+                        <h3>WEATHER</h3>
+                    </a>
+                </div>
+
+                <div class="category" id="body">
+                    <a href="categories/body.html">
+                        <i class="fas fa-child"></i>
+                        <i class="fas fa-check"></i>
+                        <h3>BODY</h3>
+                    </a>
+                </div>
+
+                <div class="category" id="vehicles">
+                    <a href="categories/vehicles.html">
+                        <i class="fas fa-car-side"></i>
+                        <i class="fas fa-check"></i>
+                        <h3>VEHICLES</h3>
+                    </a>
+                </div>
+
+                <div class="category" id="objects">
+                    <a href="categories/objects.html">
+                        <i class="fas fa-archive"></i>
+                        <i class="fas fa-check"></i>
+                        <h3>OBJECTS</h3>
+                    </a>
+                </div>
+
+                <div class="category" id="clothes">
+                    <a href="categories/clothes.html">
+                        <i class="fas fa-tshirt"></i>
+                        <i class="fas fa-check"></i>
+                        <h3>CLOTHES</h3>
+                    </a>
+                </div>s
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery-3.5.js"></script>
+    <script src="../js/side-btn.js"></script>
+    <script src="../js/categories.js"></script>
+    <!-- <script src="../../js/index.js"></script> -->
+
+</body>
+
+</html>

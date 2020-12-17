@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+$color-1: #D63D38;
+$color-2: #5FBEE3;
+$color-3: #7D3BD4;
+$color-4: #000000;
+$color-5: #FAFEEE;
+$color-6: #e9b3c5;
+$color-7: #8d8d8d;
+
+$font-1:'Rubik',
+sans-serif;
+$font-2:'Fredericka the Great',
+cursive;
+$font-3:'Luckiest Guy',
+cursive;
+$font-4:'Fredoka One',
+cursive;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .back {
+
+        padding-left: 20px;
+        padding-top: 20px;
+        position: fixed;
+        left: 0;
+
+        a {
+            font-size: 22px;
+            font-weight: bold;
+            color: $color-5;
+        }
+
+        a:hover {
+            color: $color-2;
+        }
+    }
+
+    .user {
+        z-index: 10000;
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        .btn-box {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            .styles-btn {
+                width: 80px;
+                height: 80px;
+                display: flex;
+                background-color: rgb(114, 107, 12);
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    font-size: 50px;
+                    color: white;
+                }
+            }
+
+            .wrapper {
+
+                position: relative;
+                top: 0;
+                right: 0;
+                //  opacity: 0;
+                //  visibility: hidden;
+
+                transition: all .4s ease 0s;
+
+                &.open {
+                    // visibility: visible;
+                    // opacity: 1;
+                    transform: translateX(-200px);
+                }
+
+                .user-wrapper {
+                    width: 200px;
+                    height: 300px;
+                    position: absolute;
+                    left: 80px;
+                    top: 0;
+                    background-color: $color-5;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        font-size: 25px;
+                        font-weight: bold;
+                        font-family: $font-4;
+                    }
+
+                    i {
+                        color: $color-3;
+                        font-size: 50px;
+                        padding-top: 10px;
+                    }
+
+                    .points {
+                        font-size: 16px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $color-3;
+                        width: 100%;
+
+                        h2 {
+                            color: $color-5;
+                        }
+
+
+                        #points {
+                            width: 90%;
+                            height: 50px;
+                            font-size: 25px;
+                            font-weight: bold;
+                            background-color: $color-6;
+                            border-radius: 25px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 10px;
+                        }
+                    }
+                }
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    background-color: $color-2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+
+            .audio-wrapper {
+                margin-left: 10px;
+                background-color: $color-3;
+                position: fixed;
+                right: 0px;
+                top: 300px;
+            }
+        }
+    }
+}
+
+#home {
+
+    .main-container {
+        width: 100%;
+        height: 100vh;
+        // background-image: url("https://kangarooeducation.cl/wp-content/uploads/2018/07/learn-english-writing-grammar-online.png");
+        background-image: url("../img/background-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .main-titles {
+
+            position: relative;
+            color: $color-5;
+
+            h1 {
+                font-size: 80px;
+            }
+
+            h3 {
+                font-size: 50px;
+                text-align: center;
+                color: $color-4;
+                font-family: $font-2;
+            }
+        }
+
+        .boton {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+
+            .nickname {
+                padding: 10px;
+                font-weight: bold;
+                font-size: 22px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                label {
+                    padding: 10px;
+                    color: $color-2;
+                }
+
+                #nickname-ok {
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        padding: 8px;
+                        width: 200px;
+                        position: relative;
+                        font-size: 18px;
+                        margin-right: 15px;
+                    }
+
+                    i {
+                        font-size: 40px;
+                        position: absolute;
+                        right: 0;
+                        color: $color-6;
+                    }
+
+                    i:hover {
+                        cursor: pointer;
+                        color: $color-2;
+                    }
+                }
+            }
+
+            #play-btn {
+                visibility: hidden;
+            }
+
+            a {
+                background-color: $color-1;
+                width: 200px;
+                height: 80px;
+                font-size: 30px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-5;
+            }
+
+            a:hover {
+                transform: scale(1.1);
+                translate: 3s;
+            }
+        }
+    }
+
+    .main-container:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $color-4;
+        position: absolute;
+        opacity: 0.4;
+    }
+}
+
+#gameplay{
+
+        background-image: url("https://scx2.b-cdn.net/gfx/news/hires/2019/galaxy.jpg");
+
+    .main-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;       
+
+        h1,
+        h2,
+        h3 {
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+        }
+
+        .curtain {
+            position: absolute;
+            z-index: -1;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/telon.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .title {
+                padding: 10px;
+            }
+
+        }
+
+        .guess-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .img-box {
+
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 600px;
+                height: 500px;
+
+                img {
+                    position: absolute;
+                }
+
+                .frame {
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 40px;
+                }
+
+                .photography {
+                    width: 80%;
+                    height: 80%;
+                    object-fit: cover;
+                }
+            }
+
+            .answer {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                #input1 {
+                    width: 200px;
+                    height: 30px;
+                    padding: 5px;
+                    // margin-top: 20px;
+                    border: 5px solid black;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: rgb(90, 71, 175);
+                    // margin-right: 60px;
+
+                }
+
+                i {
+                    font-size: 50px;
+                    position: absolute;
+                    right: -60px;
+                }
+
+                #answerWrong {
+                    color: $color-1;
+                    visibility: hidden;
+                }
+
+                #answerOk {
+                    color: #4abd3f;
+                    visibility: hidden;
+                }
+
+            }
+
+        }
+
+        .btn-send {
+            // width: 100%;
+            //  height: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px;
+            position: relative;
+
+            button {
+                width: 200px;
+                height: 80px;
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+                background-color: #3f61cf;
+                border: none;
+                font-family: 'Rubik', sans-serif;
+            }
+
+            button:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+                transition: 0.4s;
+            }
+
+            #go {
+                font-size: 200px;
+                // width: 33.3%;
+                display: flex;
+                justify-content: flex-end;
+                cursor: pointer;
+                visibility: hidden;
+                position: absolute;
+                right: -100%;
+                color: #a75c7b;
+            }
+        }
+
+
+        .modal-container {
+            opacity: 0;
+            visibility: hidden;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background: rgba($color: #000000, $alpha: 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .modal {
+                width: 40%;
+                height: 50%;
+                background-color: $color-2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                transition: transform 0.8s;
+                transform: translateY(0%);
+                border-radius: 10px;
+
+            }
+
+            .modal-close {
+                //   transform: translateY(-200%);
+
+                .close {
+                    position: absolute;
+                    top: 0px;
+                    right: 15px;
+                    font-size: 25px;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    background: $color-1;
+                    color: white;
+                    line-height: 25px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+///////////////////
+
+#categories {
+
+    .container {
+        background-color: $color-2;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../img/background-3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                font-size: 50px;
+            }
+
+            .title {
+                padding: 10px;
+            }
+        }
+
+        .category-container {
+
+            display: flex;
+            justify-content: center;
+
+            .grid-container {
+
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 800px;
+
+                i {
+                    font-size: 80px;
+                    color: white;
+                }               
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                }
+
+                .hover:hover {
+                    background-color: $color-3;
+
+                    i {
+                        color: $color-6;
+                    }
+                }
+
+
+                .category {
+                    background-color: $color-1;
+                    width: 200px;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px;
+                    position: relative;
+
+                    .fa-check {
+                        position: absolute;
+                        font-size: 50px;
+                        color: green;
+                        right: 0;
+                        bottom: 0;
+                        padding: 10px;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

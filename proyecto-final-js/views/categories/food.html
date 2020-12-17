@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+
+<body id="gameplay">
+
+  <div class="container">
+    <section class="user">
+      <div class="btn-box">
+
+        <div class="wrapper styles-btn">
+
+          <a id="user-trigger" href="#"><i class="fas fa-user-circle"></i></a>
+
+          <div class="user-wrapper open">
+            <i class="fas fa-crown"></i>
+
+            <p id="username">ANONIMOUS</p>
+
+            <div class="points">
+              <h2>YOUR SCORE: </h2>
+              <span id="points">0</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="sound" class="styles-btn audio-wrapper">
+          <!-- <i class="fas fa-volume-mute"></i> -->
+          <i class="fas fa-volume-up"></i>
+
+        </div>
+
+        <audio class="audios" id="sound1" preload="none">
+          <source src="../../audio/correct.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio class="audios" id="sound2" preload="none">
+          <source src="../../audio/wrong.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+      <!--btn-box-->
+    </section>
+
+    <main class="main-container">
+
+      <div class="curtain"></div>
+
+      <div class="header">
+
+        <div class="back">
+          <a href="../categories.html"><i class="fas fa-angle-left"></i> BACK</a>
+        </div>
+
+        <div class="title">
+          <h1>LEVEL <span id="level">1</span></h1>
+          <h2>FOOD</h2>
+        </div>
+
+        <div class="space"></div>
+
+      </div>
+
+      <div class="guess-container">
+        <div class="img-box">
+          <img src="" class="photography" id="imagen1" alt="pic">
+          <img src="../../img/frame.svg" class="frame" alt="frame" />
+        </div>
+        <div class="answer">
+          <input id="input1" type="text" />
+          <i class="fas fa-check-square" id="answerOk"></i>
+          <i class="fas fa-times-circle" id="answerWrong"></i>
+        </div>
+
+      </div>
+
+      <div class="btn-send">
+        <button id="boton">LET'S GO!</button>
+        <div id="go"><i class="fas fa-long-arrow-alt-right"></i></div>
+      </div>
+
+      <!-- Ventana modal para avanzar de categoría al finalizar  -->
+
+      <div class="modal-container">
+        <div class="modal modal-close">
+          <p class="close">X</p>
+          <p>CONGRATULATIONS</p>
+          <a href="../categories.html" id="playAnother"> PLAY ANOTHER CATEGORIE</a>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- container -->
+
+  <script src="../../js/jquery-3.5.js"></script>
+  <script src="../../js/categories/food.js"></script>
+  <script src="../../js/index.js"></script>
+  <script src="../../js/side-btn.js"></script>
+
+</body>
+
+</html>

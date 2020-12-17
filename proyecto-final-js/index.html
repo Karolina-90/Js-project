@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="home">
+
+  <div class="container">
+
+    <section class="user">
+      <div class="btn-box">
+
+        <div class="wrapper styles-btn">
+
+          <a id="user-trigger" href="#"><i class="fas fa-user-circle"></i></a>
+
+          <div class="user-wrapper open">
+            <i class="fas fa-crown"></i>
+
+            <p id="username">ANONIMOUS</p>
+
+            <!-- <i class="far fa-star"></i> -->
+
+            <div class="points">
+              <h2>YOUR SCORE: </h2>
+              <span id="points"></span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="sound" class="styles-btn audio-wrapper">
+          <!-- <i class="fas fa-volume-mute"></i> -->
+          <i class="fas fa-volume-up"></i>
+
+        </div>
+
+        <audio class="audios" id="sound1" preload="none">
+          <source src="../../audio/muse.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio class="audios" id="sound2" preload="none">
+          <source src="../../audio/mcr.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+      <!--btn-box-->
+    </section>
+
+    <main class="main-container">
+      <div class="main-titles">
+        <h1>BASIC ENGLISH GAME</h1>
+        <h3>Practice english for beginners</h3>
+      </div>
+
+      <div class="boton">
+
+        <div class="nickname">
+          <label for="">YOUR NICKNAME HERE</label>
+          <div id="nickname-ok">
+            <input type="text" name="" id="nickname">
+            <i class="fas fa-check-square" id="crearUsuario"></i>
+          </div>
+
+          <p id="message"></p>
+        </div>
+
+        <a href="views/categories.html" id="play-btn">PLAY</a>
+
+      </div>
+
+    </main>
+
+    <div class="category" id="animals" ></div>
+    <div class="category" id="fruveg" ></div>
+    <div class="category" id="food" ></div>
+    <div class="category" id="sports" ></div>
+    <div class="category" id="weather" ></div>
+    <div class="category" id="body" ></div>
+    <div class="category" id="vehicles" ></div>
+    <div class="category" id="objects" ></div>
+    <div class="category" id="clothes" ></div>
+
+  </div>
+  <!-- container -->
+
+  <script src="js/jquery-3.5.js"></script>
+  <script src="js/categories.js"></script>
+  <!-- <script src="js/index.js"></script> -->
+  <script src="js/main.js"></script>
+  <script src="js/side-btn.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "js-project",
+  "version": "0.0.1",
+  "description": "Proyecto final de JS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/styles.scss ./css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karolina-90/Js-project.git"
+  },
+  "author": "Carolina López",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karolina-90/Js-project/issues"
+  },
+  "homepage": "https://github.com/Karolina-90/Js-project#readme"
+}
